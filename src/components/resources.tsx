@@ -17,7 +17,7 @@ export const Resources = () => {
     <ul>
       {links.map((link) => (
         <li key={link.label}>
-          <Link href={link.href} rel="noopener noreferrer" target="_blank" className="text-tiny focus:outline-none focus:ring-2 rounded p-1 -m-1 text-blue-500 hover:text-blue-600 transition-colors">
+          <Link href={link.href} rel="noopener noreferrer" target="_blank" className="text-sm sm:text-tiny focus:outline-none focus:ring-2 rounded p-1 -m-1 text-blue-500 hover:text-blue-600 transition-colors">
             {link.label}
           </Link>
         </li>
