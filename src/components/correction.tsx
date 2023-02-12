@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 
-const getComponents = (result) => {
+const getComponents = (result: any) => {
   const components: React.ReactElement[] = [];
   let sentence = result.sentence as string;
   let start = 0;

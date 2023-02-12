@@ -9,8 +9,6 @@ import { Correction } from "@/components/correction";
 import { AnimatePresence } from "framer-motion";
 import { Button, Resources } from "@/components";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   const [results, setResults] = useState<Array<any>>([]);
   const [error, setError] = useState<string>();
