@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   description: "Korrigiere 'das' und 'dass' in deinen Sätzen",
   keywords: "das, dass, korrektur, satz, KI, machine learning, german, deutsch",
   creator: "Alexander Bluhm",
+  openGraph: {
+    title: "Das oder Dass" as any, // TODO: Remove this cast once it is fixed in Next.js
+    description: "Korrigiere 'das' und 'dass' in deinen Sätzen",
+    locale: "de-DE",
+    type: "website",
+    url: "https://dasoderdass.de",
+    images: [
+      {
+        url: "https://dasoderdass.de/og.png",
+        width: 2400,
+        height: 1200,
+      },
+    ],
+  },
 };
 
 const inter = createInter({
