@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = forwardRef((props, buttonRef) => {
   const { className, children, width, loading = false, disabled = false, style = {}, Component = "button", ...rest } = props;
   const rootClassName = clsx(
     className,
-    "inline-flex h-9 items-center relative text-sm sm:text-tiny dark:text-neutral-200 bg-white focus:outline-none focus:ring-2 dark:hover:bg-brand-700 hover:bg-brand-100 font-medium dark:bg-brand-800 placeholder:text-neutral-400 dark:placeholder:text-neutral-500 px-3.5 py-1.5 rounded-md border border-black/5 hover:border-black/10 shadow-input shadow-black/5 hover:shadow-black/10 transition-all dark:shadow-black/10 !outline-none"
+    "inline-flex h-9 items-center dark:[text-shadow:0_1px_1px_rgb(0_0_0_/_0.7)] relative text-sm sm:text-tiny dark:text-neutral-200 bg-white focus:outline-none focus:ring-2 dark:hover:bg-brand-700 hover:bg-brand-100 font-medium dark:bg-brand-800 placeholder:text-neutral-400 dark:placeholder:text-neutral-500 px-3.5 py-1.5 rounded-md border border-black/5 hover:border-black/10 shadow-input shadow-black/5 hover:shadow-black/10 transition-all dark:shadow-black/10 !outline-none"
   );
   return (
     <Component ref={buttonRef} disabled={disabled} style={{ width, ...style }} className={rootClassName} {...rest}>
