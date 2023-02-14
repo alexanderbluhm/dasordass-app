@@ -23,7 +23,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
   }
 
   try {
-    const response = await fetch("https://dasoderdassapp.fly.dev/predictions", {
+    const response = await fetch(`${url}/predictions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
