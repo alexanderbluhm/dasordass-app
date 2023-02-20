@@ -7,7 +7,7 @@ import { FormEvent, useRef, useState } from "react";
 import clsx from "clsx";
 import { Correction } from "@/components/correction";
 import { AnimatePresence } from "framer-motion";
-import { Button, Resources } from "@/components";
+import { Button, Footer, Resources } from "@/components";
 
 export default function Home() {
   const [results, setResults] = useState<Array<any>>([]);
@@ -43,7 +43,7 @@ export default function Home() {
         <h1 className="font-medium font-serif text-lg tracking-tight">Das oder Dass</h1>
       </header>
 
-      <main className="">
+      <main className="flex-1">
         <p className="text-brand-500 max-w-prose dark:text-brand-300 font-sans text-sm sm:text-tiny">Der Gebrauch von &quot;das&quot; und &quot;dass&quot; ist in der deutschen Sprache häufig nicht richtig. Dieses Tool basiert auf einem KI Modell und zeigt dir für deinen Eingabesatz ob du &quot;das&quot; und &quot;dass&quot; richtig benutzt hast.</p>
         <form onSubmit={submit} className="mt-5 flex flex-col items-start">
           <input
@@ -83,6 +83,8 @@ export default function Home() {
           <Resources />
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }

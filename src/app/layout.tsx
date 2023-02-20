@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <PlausibleProvider domain="dasoderdass.de" />
       </head>
-      <body className="max-w-3xl mx-auto px-5 py-12">{children}</body>
+      <body className="flex flex-col max-w-3xl mx-auto px-5 pt-12 pb-4">{children}</body>
     </html>
   );
 }

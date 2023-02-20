@@ -6,3 +6,8 @@
 .border {
   background-clip: padding-box;
 }
+
+html,
+body {
+  height: 100%;
+}
