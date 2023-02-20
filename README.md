@@ -3,7 +3,7 @@
 This is an AI-powered tool to check german sentences for correct usage of 'das' and 'dass'.
 According to multiple resources, this is the most frequent error in the german written language.
 The tool uses a custom language model, finetuned using a pre-trained german BERT model.
-
+The code for the model can be found [here](https://github.com/alexanderbluhm/dasordass).
 ![preview](./preview.png)
 
 ## Local Development
