@@ -52,7 +52,7 @@ export default function Home() {
             placeholder='z.B. "Dass meine Hose am Knie kaputt ist, habe ich erst beim Bügeln gesehen."'
             className="relative w-full sm:text-tiny focus:outline-none focus:ring-2 transition-all dark:text-brand-200 bg-white dark:bg-brand-800 placeholder:text-brand-500 dark:placeholder:text-brand-500 px-3.5 py-2 rounded-md border border-black/5 shadow-input shadow-black/5 dark:shadow-black/10 !outline-none"
           />
-          <Button loading={loading} disabled={loading} className="mt-2">
+          <Button type="submit" loading={loading} disabled={loading} className="mt-2">
             Korrigiere den Satz
           </Button>
         </form>
